@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局</title>
+    <style>
+
+        .bigflex{
+            width: 616px;
+            height: 236px;
+            margin: 50px auto;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bg{
+            width: 100%;
+            height: 100%;
+            background-image: url(banner1.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            position: absolute;
+        }
+
+        .leftbtn{
+            width: 52px;
+            height: 52px;
+            background-image: url(arrow1.png);
+            background-repeat: no-repeat;
+            position: relative;
+            top: 94px;
+            left: 20px;
+            display: block;
+        }
+
+        .rightbtn{
+            width: 52px;
+            height: 52px;
+            background-image: url(arrow2.png);
+            background-repeat: no-repeat;
+            position: relative;
+            top: 94px;
+            right: 20px;
+            display: block;
+        }
+        
+        .dot{
+            width: 15px;
+            height: 15px;
+            background-image: url(point1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .dotactive{
+            width: 15px;
+            height: 15px;
+            background-image: url(point2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .dotbox{
+            background-repeat: no-repeat;
+            display: flex;
+            position: absolute;
+            gap: 8px;
+            bottom: 11px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="bigflex">
+        
+        <div class="bg"></div>
+        <div class="leftbtn"></div>
+        <div class="rightbtn"></div>
+        <div class="dotbox">
+            <div class="dot"></div>
+            <div class="dotactive"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</body>
+</html>
