@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>TRAE 更新日志</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft Yahei", sans-serif;
+    }
+    body {
+      background-color: #0c0c0c;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      margin-bottom: 60px;
+    }
+
+    .header-nav a{
+        text-decoration: none;
+        color: #cccccc;
+    }
+
+    .header-nav a:hover{
+        color: #fff;
+    }
+
+    .nav-logo {
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 28px;
+    }
+    .nav-item {
+      font-size: 14px;
+      color: #cccccc;
+      margin-right: 22px;
+      display: flex;
+    }
+
+    .banner-card {
+      max-width: 640px;
+      margin: 0 auto 60px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .banner-subtitle {
+      color: #51e090;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .banner-title {
+      font-size: 44px;
+    }
+    .gradient-text {
+      background: linear-gradient(45deg, #ddd, #67e8a5, #36dd7c);
+      background-clip: text;
+      color: transparent;
+    }
+    .banner-desc {
+      color: #aaaaaa;
+      margin: 12px 0 24px;
+      font-size: 14px;
+    }
+    .banner-btn {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 6px 18px;
+    }
+
+    .log-container {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative;
+      
+    }
+    
+    .log-container::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      border-left: 1px dashed #999999;
+    }
+
+    .log-item {
+      padding: 16px;
+      margin-bottom: 14px;
+      position: relative;
+      display: flex;
+      gap: 24px;
+    }
+    
+    .log-item::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      position: absolute;
+      left: -26px;
+      top: 18px;
+      z-index: 10;
+    }
+
+    
+    .log-left {
+      flex-shrink: 0;
+    }
+    .log-date {
+      color: #51e090;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .log-tag-row {
+      display: flex;
+      gap: 8px;
+    }
+    .log-tag {
+      background: #1f1f1f;
+      padding: 2px 8px;
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    
+    .log-right {
+      flex: 1;
+    }
+    .log-right ul {
+      list-style: none;
+    }
+    .log-right li {
+      color: #dddddd;
+      font-size: 14px;
+      margin: 6px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+    .log-right li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-nav">
+    <div class="nav-logo">TRAE</div>
+    <span class="nav-item">
+        <a href=" ">产品 ▾ </a >
+    </span>
+    <span class="nav-item"><a href="#">企业版</a ></span>
+    <span class="nav-item"><a href="value.html">定价</a ></span>
+    <span class="nav-item"><a href="#">文档</a ></span>
+    <span class="nav-item"><a href="#">更新日志</a ></span>
+    <span class="nav-item"><a href="#">社区</a ></span>
+    <span class="nav-item"><a href="#">知识库</a ></span>
+  </div>
+
+  <div class="banner-card">
+    <div class="banner-subtitle">更新日志</div>
+    <h1 class="banner-title">探索 TRAE 的<span class="gradient-text">最新动态</span></h1>
+    <p class="banner-desc">随时掌握 TRAE 的变化，了解我们为您带来的创新与优化</p >
+    <button class="banner-btn">了解更多</button>
+  </div>
+
+  <div class="log-container">
+    <div class="log-item">
+      <div class="log-left">
+        <span class="log-date">2026-06-09</span>
+        <div class="log-tag-row">
+          <span class="log-tag">v0.8.8</span>
+          <span class="log-tag">TRAE APP</span>
+        </div>
+      </div>
+      <div class="log-right">
+        <ul>
+          <li>TRAE APP 支持对登录设备删除/重命名的操作。</li>
+          <li>TRAE APP 可选择内置模型、自定义模型、其他模型等。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="log-item">
+      <div class="log-left">
+        <span class="log-date">2026-06-09</span>
+        <div class="log-tag-row">
+          <span class="log-tag">v0.1.18</span>
+          <span class="log-tag">TRAE Work</span>
+        </div>
+      </div>
+      <div class="log-right">
+        <ul>
+          <li>TRAE SOLO 升级为 TRAE Work。</li>
+          <li>TRAE Work 支持企业版账号登录。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="log-item">
+      <div class="log-left">
+        <span class="log-date">2026-06-08</span>
+        <div class="log-tag-row">
+          <span class="log-tag">v0.1.16-0.1.17</span>
+          <span class="log-tag">TRAE Work</span>
+        </div>
+      </div>
+      <div class="log-right">
+        <ul>
+          <li>修复了一些线上已知问题。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

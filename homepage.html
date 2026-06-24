@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>TRAE - 智能无限，协作无间</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: #0a0a0e;
+            color: #fff;
+            padding-top: 60px; 
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            padding: 0 30px;
+            background-color: #0a0a0e;
+            z-index: 999;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .logo-icon {
+            width: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 15px;
+        }
+        .nav-list {
+            display: flex;
+            gap: 32px;
+        }
+        .nav-list > li {
+            position: relative;
+        }
+        .nav-list a {
+            color: #cccccc;
+            font-size: 15px;
+        }
+        .nav-list a:hover {
+            color: #fff;
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .login-btn {
+            padding: 8px 20px;
+            background: #222;
+            border: none;
+            color: #fff;
+            border-radius: 2px;
+        }
+        .download-btn {
+            padding: 8px 22px;
+            background: #39e067;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+
+        .dropdown-box {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 220px;
+            background: #14141a;
+            padding: 12px 0;
+            border-radius: 4px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+        .dropdown-box li {
+            padding: 10px 20px;
+        }
+        .dropdown-box li:hover {
+            background: #1e1e28;
+        }
+        
+        .nav-list .dropdown:hover .dropdown-box {
+            display: block;
+        }
+
+       
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px;
+            min-height: 100vh;
+            background-image: radial-gradient(#162820 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .banner-text h1 {
+            font-size: 80px;
+            line-height: 1.1;
+            margin-top: 300px;
+        }
+        .banner-text p {
+            font-size: 60px;
+            color: #c0c0c0;
+            
+        }
+        .banner-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 300px;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 16px;
+        }
+        .banner-green-btn {
+            width: 200px;
+            padding: 16px;
+            background: #39e067;
+            color: #000;
+            text-align: center;
+            font-weight: bold;
+            border: none;
+        }
+        .banner-outline-btn {
+            width: 200px;
+            padding: 16px;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .banner-buttons a{
+            color: #9a9898;
+            font-size: 0.9em;
+            text-decoration: underline;
+        }
+
+        .banner-buttons a:hover{
+            color: #fff;
+        }
+        
+        .work-section {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .work-title h2 {
+            font-size: 60px;
+            margin-bottom: 12px;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #39e067, #8aff4a, #c0c0c0);
+            background-clip: text;
+            color: transparent;
+        }
+        .work-desc {
+            color: #aaa;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .work-main-btn {
+            padding: 16px 50px;
+            background: #39e067;
+            color: #000;
+            border: none;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+
+        .video-box {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .video-box video {
+            width: 100%;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header-nav">
+        <div class="nav-left">
+            <div class="logo-icon">TRAE</div>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href=" ">产品 ▾</a >
+                    <ul class="dropdown-box">
+                        <li><a href="#">TRAE Work <span style="color:#39e067">New</span></a ></li>
+                        <li><a href="#">TRAE IDE</a ></li>
+                        <li><a href="#">TRAE 插件</a ></li>
+                    </ul>
+                </li>
+                <li><a href="#">企业版</a ></li>
+                <li><a href="value.html">定价</a ></li>
+                <li><a href="#">文档</a ></li>
+                <li><a href="update.html">更新日志</a ></li>
+                <li><a href="#">社区</a ></li>
+                <li><a href="#">知识库</a ></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="login-btn">登录</button>
+            <button class="download-btn">下载中心</button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h1>TRAE</h1>
+            <p>智能无限，协作无间</p >
+        </div>
+        <div class="banner-buttons">
+            <p>TRAE Work：全能上线的智能工作助手</p >
+            <p>TRAE IDE：你的专属AI开发工具</p >
+            <div class="btn-group">
+                <button class="banner-green-btn">下载 TRAE Work</button>
+                <button class="banner-outline-btn">下载 TRAE IDE</button>
+            </div>
+            <a href="webpage.html">TRAE Work 网页版 > </a >
+        </div>
+    </section>
+
+    
+    <section class="work-section">
+        <div class="work-title">
+            <h2>全新 <span class="gradient-text">TRAE Work</span></h2>
+        </div>
+        <p class="work-desc">桌面端、网页版和移动端全量上线</p >
+        <button class="work-main-btn">即刻探索 TRAE Work</button>
+    </section>
+
+    <div class="video-box">
+        <video controls width="100%">
+            <source src="video/demo.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>

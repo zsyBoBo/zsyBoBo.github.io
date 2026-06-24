@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAE Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        body {
+            background: #070a0e;
+            background-image: radial-gradient(#20262d 1px, transparent 1px);
+            background-size: 16px 16px;
+            color: #fff;
+            padding: 100px;
+        }
+
+        header.nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            background-color: #000;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+        }
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .nav-item {
+            font-size: 15px;
+            color: #c0c8d3;
+        }
+
+        .nav-left a{
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover{
+            color: #fff;
+        }
+
+        .hot {
+            color: #50e380;
+        }
+        .nav-right {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .down-btn {
+            padding: 7px 16px;
+            background: #1c2128;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-btn {
+            padding: 7px 18px;
+            background: #24c856;
+            color: #000;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        .title-box {
+            text-align: center;
+            margin: 10px 0 35px;
+        }
+        
+        .beta-text {
+            font-size: 16px;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #0f603c, #f2f6f4);
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .main-title {
+            font-size: 44px;
+            color: #ffffff;
+        }
+
+        
+        .input-wrap {
+            width: 540px;
+            margin: 0 auto 40px;
+            background: #141920;
+            border: 1px solid #2a313b;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        #prompt-input {
+            width: 100%;
+            min-height: 100px;
+            background: transparent;
+            border: none;
+            color: #e2e8f0;
+            font-size: 14px;
+            resize: none;
+            outline: none;
+        }
+        #prompt-input::placeholder {
+            color: #6b7889;
+        }
+
+        
+        .input-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+        .icon-list {
+            display: flex;
+            gap: 18px;
+            color: #94a3b8;
+            background-color: #141920;
+        }
+
+        .icon-list button{
+            background-color: #141920;
+            border: none;
+            color: #fff;
+        }
+
+        .right-group{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mic{
+            background-color: #141920;
+            border: none;
+            color: #fff;
+        }
+
+        .send-icon {
+            width: 34px;
+            height: 34px;
+            background: #24c856;
+            border: 1px;
+            border-radius: 6px;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .task-container {
+            width: 640px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .task-card {
+            flex: 1 1 290px;
+            background: #141920;
+            border: 1px solid #2a313b;
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .card-icon {
+            width: 32px;
+            height: 32px;
+            background: #1e242c;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a0aec0;
+        }
+        .card-text {
+            font-size: 14px;
+            color: #d0d9e4;
+        }
+
+        
+        .bottom-gradient-block {
+            width: 100%;
+            height: 160px;
+            margin-top: 60px;
+            
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                #0a1a16 40%,
+                #07100e 70%,
+                #020403 100%
+            );
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 20px;
+            color: #50e380;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="nav">
+        <div class="nav-left">
+            <div class="logo">TRAE</div>
+            <div class="nav-item"><a href="">产品 ▾</a ></div>
+            <div class="nav-item"><a href="">企业版</a ></div>
+            <div class="nav-item"><a href=" ">定价</a ></div>
+            <div class="nav-item"><a href="">文档</a ></div>
+            <div class="nav-item"><a href="update.html">更新日志</a ></div>
+            <div class="nav-item"><a href="">社区</a ></div>
+            <div class="nav-item"><a href="">知识库</a ></div>
+        </div>
+        <div class="nav-right">
+            <div class="down-btn">下载中心</div>
+            <div class="login-btn">登录</div>
+        </div>
+    </header>
+
+    
+    <div class="title-box">
+        <div class="beta-text">全新 TRAE Work BETA</div>
+        <h1 class="main-title">不止于码 大有可为</h1>
+    </div>
+
+    
+    <div class="input-wrap">
+        <textarea id="prompt-input" placeholder="描述你想做的事，剩下的交给 TRAE Work"></textarea>
+        <div class="input-bottom">
+            <div class="icon-list">
+                <button>@</button>
+                <button>⊡</button>
+                <button>✂</button>
+            </div>
+            
+              <span class="right-group">
+                <button class="mic" id="voiceBtn">🎙</button>
+                <button class="send-icon">↑</button>
+            </span>
+        </div>
+    </div>
+
+    
+    <div class="task-container">
+        <div class="task-card">
+            <div class="card-icon">📄</div>
+            <div class="card-text">研读论文，产出论文综述</div>
+        </div>
+        <div class="task-card">
+            <div class="card-icon">PPT</div>
+            <div class="card-text">调研各个短视频平台，生成汇报PPT</div>
+        </div>
+        <div class="task-card">
+            <div class="card-icon">📈</div>
+            <div class="card-text">挖掘AI市场的数据，分析数据趋势</div>
+        </div>
+        <div class="task-card">
+            <div class="card-icon">💻</div>
+            <div class="card-text">开发一个多语言学习网站</div>
+        </div>
+        <div class="task-card">
+            <div class="card-icon">🗂️</div>
+            <div class="card-text">分析这个项目仓库，生成code wiki</div>
+        </div>
+        <div class="task-card">
+            <div class="card-icon">🤖</div>
+            <div class="card-text">创作一个像素风机甲对战游戏</div>
+        </div>
+    </div>
+
+   
+    <div class="bottom-gradient-block">
+        INTRODUCING NEW TRAE Work
+    </div>
+</body>
+</html>
